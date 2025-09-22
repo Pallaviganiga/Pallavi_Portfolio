@@ -19,6 +19,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
+// Splash: hide after load
+window.addEventListener('load', () => {
+  const splash = document.getElementById('splash');
+  if (splash) {
+    setTimeout(()=>{ splash.classList.add('hidden'); }, 1800);
+  }
+});
+
 // Contact form: submit via Web3Forms and show inline status
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', async (e)=>{

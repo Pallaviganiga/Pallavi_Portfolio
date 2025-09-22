@@ -12,6 +12,17 @@ body {
   -webkit-font-smoothing:antialiased;
 }
 
+/* ===== Splash screen (unique) ===== */
+#splash { position: fixed; inset: 0; background: radial-gradient(800px 500px at 50% 30%, rgba(123,97,255,0.18), rgba(0,0,0,0)) , #0b1220; display:flex; align-items:center; justify-content:center; z-index: 9999; transition: opacity .6s ease, visibility .6s ease; }
+#splash.hidden { opacity: 0; visibility: hidden; }
+.splash-inner { position:relative; display:flex; flex-direction:column; align-items:center; gap:14px; color:#fff; padding:24px 28px; border-radius:20px; background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); backdrop-filter: blur(10px); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+.splash-inner:before { content:""; position:absolute; inset:-2px; border-radius:22px; padding:2px; background: linear-gradient(90deg, rgba(123,97,255,0.8), rgba(74,198,255,0.8)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity:.6; }
+.splash-logo { width:84px; height:84px; border-radius:22px; display:flex; align-items:center; justify-content:center; background: conic-gradient(from 0deg, #7b61ff, #4ac6ff, #7b61ff); animation: spinGrad 2.8s linear infinite; color:#0b1220; font-weight:800; font-size:32px; box-shadow: 0 10px 30px rgba(74,198,255,0.25); }
+.splash-text { font-weight:700; letter-spacing:.4px; background: linear-gradient(90deg,#e5e7eb,#93c5fd,#e9d5ff); -webkit-background-clip:text; background-clip:text; color:transparent; text-transform: uppercase; font-size:14px; opacity:.95; }
+.splash-spinner { width:34px; height:34px; border-radius:50%; border:3px solid rgba(255,255,255,0.18); border-top-color:#7b61ff; border-right-color:#4ac6ff; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spinGrad { to { transform: rotate(1turn); } }
+
 /* ===== Variables ===== */
 :root{
   --container: 1280px;
