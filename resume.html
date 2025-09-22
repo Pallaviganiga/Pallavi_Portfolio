@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pallavi — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',system-ui,-apple-system,"Segoe UI",Roboto,Arial;color:#111827;background:#f7f9ff;}
+    .container{max-width:900px;margin:24px auto;padding:24px;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px}
+    .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+    .title{font-size:24px;font-weight:700}
+    .actions{display:flex;gap:8px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.1);background:#111827;color:#fff;text-decoration:none;cursor:pointer}
+    .btn.alt{background:#fff;color:#111827}
+    h2{font-size:18px;margin:18px 0 10px}
+    ul{margin-left:16px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .muted{color:#6b7280}
+    @media print{ .actions{display:none} body{background:#fff} .container{border:0;border-radius:0;margin:0;max-width:100%;} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <div class="title">Pallavi — Resume</div>
+        <div class="muted">Flutter & Web Developer • pallaviganiag3@gmail.com • +91 8746964756</div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="window.print()">Download / Print PDF</button>
+        <a class="btn alt" href="index.html">Back to Portfolio</a>
+      </div>
+    </div>
+
+    <h2>Summary</h2>
+    <p>A Flutter and web developer focused on clean UI and scalable apps, experienced with Flutter, Node, PHP, and Firebase.</p>
+
+    <div class="grid">
+      <div>
+        <h2>Skills</h2>
+        <ul>
+          <li>Flutter, Dart</li>
+          <li>HTML, CSS, JavaScript, React</li>
+          <li>Node.js, PHP, MySQL, MongoDB, Firebase</li>
+        </ul>
+        <h2>Education</h2>
+        <ul>
+          <li>MCA — St Joseph Engineering College</li>
+          <li>BCA — St Agnes College</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul>
+          <li>SHG Connect — Flutter, Node.js, MongoDB</li>
+          <li>Visitor Management — Flutter, Firebase</li>
+          <li>Farmer's Dairy — HTML, PHP, MySQL</li>
+        </ul>
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: pallaviganiag3@gmail.com</li>
+          <li>Phone: +91 8746964756</li>
+          <li>LinkedIn: /in/pallavi-ganiga-8530b1257/</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
